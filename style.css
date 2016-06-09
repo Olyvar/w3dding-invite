@@ -1,0 +1,142 @@
+/* ---------------------
+	Page Styles
+------------------------ */
+
+body {
+    font-family: 'Alegreya', Georgia, serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 1.25em;
+    background: #f9f9f9;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 1em 0;
+}
+
+h1 {
+    font-size: 2.441em;
+    line-height: 1.1;
+    margin: 0 0 0.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.953em;
+    line-height: 1.2;
+    margin: 1.42em 0 0.7em;
+    font-weight: normal;
+    color: black;
+}
+
+h3 {
+    font-size: 1.563em;
+    line-height: 1.3;
+    margin: 1em 0 0.2em;
+    font-weight: normal;
+    color: black;
+}
+
+a{
+    color: #f46881;
+    transition: color ease 0.4s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D2596F;
+}
+
+.feat{
+    width: auto;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #f46881;
+    border-left: none;
+    border-right: none;
+}
+
+.flower-top-decoration {
+    margin-top: 1em;
+    background: url('images/flower-top.png') no-repeat top center;
+    -webkit-background-size: 800px;
+    background-size: 800px;
+    height: 280px;
+}
+
+.flower-corner-decoration{
+    background: url('images/flower-corner.png') no-repeat;
+    width: 400px;
+    height: 358px;
+    margin: -15em 1em 1em 1em;
+}
+
+.bottom-left{
+    float:left;
+}
+
+.bottom-right{
+    float:right;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.colly{
+    float: left;
+}
+
+.three{
+    width: 33%;
+}
+
+@media screen and (max-width: 1300px) {
+    .flower-corner-decoration{
+        width: 20%;
+        background-size: 150px;
+        height: 160px;
+        margin-top: -7em;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .container{
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+
+    .two, .three{
+        width: 100%;
+    }
+
+    .flower-top-decoration {
+        margin-top: 1em;
+        -webkit-background-size: 400px;
+        background-size: 400px;
+        height: 140px;
+    }
+
+
+    .flower-corner-decoration{
+        margin-top: -4em;
+        width: 33%;
+        background-size: 150px;
+        height: calc(330px / 2);
+    }
+}
+
