@@ -1,6 +1,12 @@
-/* ---------------------
-	Page Styles
------------------------- */
+@font-face {
+    font-family:'DigoryDoodles';
+    src:    url('fonts/Digory_Doodles_PS.eot');
+    src:    url('fonts/Digory_Doodles_PS.eot#iefix') format('embedded-opentype'),
+            url('fonts/DigoryDoodlesPS.woff') format('woff'),
+            url('fonts/Digory_Doodles_PS.ttf') format('truetype'),
+            url('fonts/DigoryDoodlesPS.svg#DigoryDoodles') format('svg');
+}
+
 
 body {
     font-family: 'Alegreya', Georgia, serif;
@@ -17,7 +23,7 @@ body {
 .container {
     max-width: 45rem;
     margin: 0 auto;
-    padding: 3em 0;
+    padding: 3em 0 2em;
 }
 
 p {
@@ -25,12 +31,17 @@ p {
     margin: 0 0 1em 0;
 }
 
+small{
+    font-size: 0.5em;
+}
+
 h1 {
-    font-size: 2.441em;
-    line-height: 1.1;
-    margin: 0 0 0.5em;
+    font-size: 2em;
+    line-height: 1.4;
+    margin: 1em 0;
     font-weight: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    font-family: 'DigoryDoodles', Georgia, serif;
 }
 
 h2 {
@@ -103,6 +114,10 @@ a:hover{
 
 .three{
     width: 33%;
+}
+
+iframe{
+    margin-bottom: 2em;
 }
 
 @media screen and (max-width: 1300px) {
